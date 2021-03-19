@@ -22,7 +22,7 @@ jobs:
           make mbed_curl
           make config
           ./wrapper/build-wrapper-macosx-x86 --out-dir bw-output make
-          sonar-scanner
+          sonar-scanner -X
       # - name: SonarCloud Scan
       #   uses: SonarSource/sonarcloud-github-action@master
       #   env:
