@@ -49,7 +49,7 @@ int main(void)
 		foo(2);
 
 		int c_size =
-			sprintf(buff, "A message from your board --> \"%s\" at %i s\n", hello.world, int(t.count() / 1000));
+			sprintf(buff, "A message from your board ahah --> \"%s\" at %i s\n", hello.world, int(t.count() / 1000));
 
 		serial.write(buff, c_size);
 		rtos::ThisThread::sleep_for(1s);
